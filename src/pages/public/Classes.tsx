@@ -1,4 +1,4 @@
-import { ArrowRight, Check, Palette, Brush, HeartHandshake } from 'lucide-react';
+import { Check } from 'lucide-react';
 import { ImageGallery } from '../../components/ui/ImageGallery';
 import { motion } from 'framer-motion';
 

@@ -1,4 +1,4 @@
-import { Clock, Calendar, Check, ArrowRight, MessageCircle } from 'lucide-react';
+import { Clock, Calendar, Check, MessageCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export function SummerCourse() {

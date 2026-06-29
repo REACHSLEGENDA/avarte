@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Heart, Wine, Palette, ArrowRight, MessageCircle } from 'lucide-react';
+import { Heart, Wine, Palette, MessageCircle } from 'lucide-react';
 
 export function RomanticExperience() {
   return (

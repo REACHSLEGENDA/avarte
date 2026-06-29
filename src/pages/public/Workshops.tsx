@@ -1,5 +1,4 @@
-import { ArrowRight, Clock, MapPin, Calendar, CheckCircle, HeartHandshake } from 'lucide-react';
-import { ImageGallery } from '../../components/ui/ImageGallery';
+import { ArrowRight, HeartHandshake } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const workshops = [
