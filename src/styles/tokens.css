@@ -1,0 +1,20 @@
+:root {
+  /* Colores oficiales AV Arte Estudio */
+  --color-av-crema: #F7EAD8;
+  --color-av-teal: #34917C;
+  --color-av-azul: #254393;
+  --color-av-magenta: #8E1F79;
+  --color-av-noche: #171E37;
+  --color-av-naranja: #F3921F;
+  --color-av-vino: #750D38;
+  
+  /* Derivados */
+  --color-av-crema-light: #FBF5EC;
+  --color-av-noche-soft: #2A3354;
+  --color-av-text-muted: rgba(23, 30, 55, 0.65);
+
+  /* Tipografía */
+  --font-display: 'Fraunces', 'Cormorant Garamond', serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
