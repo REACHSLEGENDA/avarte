@@ -83,7 +83,7 @@ export function Gallery() {
                 onClick={() => setSelectedArtwork(art)}
               >
                 <div className="relative overflow-hidden">
-                  <img src={art.image} alt={art.title} className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <img src={art.image} alt={art.title} className="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500" />
                   
                   {/* Status Badges */}
                   {art.status !== 'disponible' && (

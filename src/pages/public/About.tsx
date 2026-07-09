@@ -7,7 +7,7 @@ export function About() {
     <div className="bg-crema min-h-screen">
       {/* Header */}
       <section className="relative pt-32 pb-24 px-4 bg-noche text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-40 bg-[url('/studio/WhatsApp%20Image%202026-06-16%20at%2011.07.43%20PM.jpeg')] bg-cover bg-center" />
+        <div className="absolute inset-0 opacity-40 bg-[url('/Fotografia/estudio/estudio2.png')] bg-cover bg-center" />
         <div className="absolute inset-0 bg-gradient-to-t from-noche via-noche/20 to-transparent" />
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <motion.h1 
@@ -48,27 +48,39 @@ export function About() {
         {/* Vianey */}
         <div className="flex flex-col md:flex-row gap-12 items-center mb-32">
           <div className="w-full md:w-5/12 aspect-[4/5] bg-noche/5 relative overflow-hidden">
-            <img src="/Fotografia/Vianey Agla/DSC_5361.JPG" alt="Vianey César Martínez" className="absolute inset-0 w-full h-full object-cover" />
+            <img src="/Fotografia/Artistas/DSC_5306.JPG" alt="Vianey César Martínez" className="absolute inset-0 w-full h-full object-cover" />
           </div>
           <div className="w-full md:w-7/12">
-            <div className="inline-flex items-center justify-center p-3 bg-magenta/10 rounded-full mb-6 text-magenta">
+            <div className="inline-flex items-center justify-center p-3 bg-[#750D38]/10 rounded-full mb-6 text-[#750D38]">
               <Sparkles size={24} />
             </div>
             <h2 className="font-display text-4xl text-noche mb-2">Vianey César Martínez</h2>
-            <p className="text-magenta font-medium text-lg mb-6">Diseñadora, animadora digital y artista. Directora y Fundadora.</p>
+            <p className="text-[#750D38] font-medium text-lg mb-6">Diseñadora, Animadora Digital y Artista. Directora y Cofundadora de AV Arte Estudio.</p>
             
             <div className="space-y-4 text-text-muted mb-8">
               <p>Formación: Escuela Profesional de Dibujo (Artista Plástico, 2016), UNITEC (Lic. en Diseño, Animación y Arte Digital, 2020), Diplomado en Arte Terapia (Danzaterapia México, 2026).</p>
-              <p>Con una trayectoria que abarca desde la docencia en Encaminarte (2023-2026) hasta la ilustración editorial en Francia ("Journal D'une Accro Á L'ayurveda", 2020), Vianey integra el mundo digital con la plástica tradicional.</p>
-              <p>Ha expuesto en el Museo Regional de Puebla, Art Toys México, Casa de Cultura Sergio Pitol y la Embajada de Suiza.</p>
+              <p>A lo largo de su trayectoria abarca la docencia en escuelas privadas de arte y estancias públicas (2023-2026) y a la vez ha participado en diversas exposiciones y proyectos artísticos. Entre sus colaboraciones más destacadas se encuentra la realización de ilustraciones para un libro francés de Ayurveda de la escritora <strong>Gracianne Hastoy</strong>. Asimismo, ha expuesto su trabajo en el <strong>Hotel CasAntica de Oaxaca</strong> dentro de muestras relacionadas con las celebraciones del Día de Muertos, así como en múltiples exposiciones en Puebla, colaborando con el director y curador <strong>Reppeto</strong>, reconocido por su labor en distintas Casas de Cultura de la entidad. También ha participado en exposiciones junto al destacado artista de Art Toy <strong>Mike Winter</strong> y en la Ciudad de México con la exposición colectiva <strong>"Me Lleva la Huesuda"</strong>.</p>
+              <p>Complementando su formación artística, ha cursado diversos talleres de arteterapia y desarrollo creativo enfocados en la enseñanza infantil, impartidos por instituciones especializadas como <strong>Danzaterapia México</strong>, fortaleciendo así su visión del arte como herramienta de expresión, aprendizaje y transformación personal.</p>
+              <p>Su obra se distingue por la fusión entre el arte tradicional y la tecnología.</p>
+              <p>La filosofía que sostiene su arte tiene una influencia existencialista. Sus obras exploran temas universales como la muerte, la tristeza, la desesperación, la esperanza y la búsqueda de sentido. Inspirada por el pensamiento de Albert Camus y su reflexión sobre la capacidad humana de construir significado frente al absurdo de la existencia, Vianey desarrolla piezas que invitan al espectador a confrontar sus emociones más profundas y a la vez que a que experimenten con la obra y se vuelvan participantes de ella.</p>
             </div>
             
-            <div className="pt-6 border-t border-noche/10">
-              <h4 className="font-mono text-xs font-semibold uppercase tracking-wider text-noche mb-3">Dominio de Software</h4>
-              <div className="flex flex-wrap gap-2">
-                {['Illustrator', 'Photoshop', 'After Effects', 'Blender', 'Z-Brush'].map(sw => (
-                  <span key={sw} className="px-3 py-1 bg-crema border border-noche/10 text-xs rounded-full">{sw}</span>
-                ))}
+            <div className="pt-6 border-t border-noche/10 space-y-6">
+              <div>
+                <h4 className="font-mono text-xs font-semibold uppercase tracking-wider text-noche mb-3">Dominio de Software</h4>
+                <div className="flex flex-wrap gap-2">
+                  {['Illustrator', 'Photoshop', 'After Effects', 'Blender', 'Z-Brush'].map(sw => (
+                    <span key={sw} className="px-3 py-1 bg-crema border border-noche/10 text-xs rounded-full">{sw}</span>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <h4 className="font-mono text-xs font-semibold uppercase tracking-wider text-noche mb-3">Manejo de Técnicas Pictóricas</h4>
+                <div className="flex flex-wrap gap-2">
+                  {['Óleo', 'Hiperrealismo al Carbón', 'Acuarela', 'Acrílico', 'Escultura Tradicional', 'Arte con Tecnología', 'Diseño de joyería en plata'].map(tech => (
+                    <span key={tech} className="px-3 py-1 bg-crema border border-noche/10 text-xs rounded-full">{tech}</span>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -118,14 +130,14 @@ export function About() {
           
           <div className="mt-12">
             <ImageGallery images={[
-              '/Fotografia/estudio/DSC_5838.JPG',
-              '/Fotografia/estudio/DSC_5841.JPG',
-              '/Fotografia/estudio/DSC_5843.JPG',
-              '/Fotografia/estudio/DSC_5844.JPG',
-              '/Fotografia/estudio/DSC_5846.JPG',
-              '/Fotografia/estudio/DSC_5849.JPG',
-              '/Fotografia/estudio/DSC_5850.JPG',
-              '/Fotografia/estudio/DSC_5866.JPG'
+              '/Fotografia/estudio/estudio1.png',
+              '/Fotografia/estudio/estudio2.png',
+              '/Fotografia/estudio/estudio3.png',
+              '/Fotografia/estudio/estudio4.png',
+              '/Fotografia/estudio/estudio 5.png',
+              '/Fotografia/estudio/estudio6.png',
+              '/Fotografia/estudio/estudio7.png',
+              '/Fotografia/estudio/estudio8.JPG'
             ]} columns={4} />
           </div>
         </div>

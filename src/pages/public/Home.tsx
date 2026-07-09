@@ -26,7 +26,7 @@ export function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="font-display font-medium text-3xl md:text-5xl text-crema leading-tight mb-6 max-w-2xl"
           >
-            Un espacio para crear, aprender e inspirarte
+            Somos un espacio donde la creatividad, la imaginación y la expresión se convierten en herramientas para crecer, aprender y conectar.
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0 }}
@@ -34,7 +34,7 @@ export function Home() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-crema-light/80 text-lg mb-10 max-w-xl"
           >
-            Estudio de arte boutique en Coyoacán, fundado por artistas para despertar tu creatividad sin importar tu nivel.
+            Estudio de Arte en Tlalpan, fundado por artistas para artistas... y para quienes están por descubrir que lo son sin importar su nivel.
           </motion.p>
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -102,23 +102,23 @@ export function Home() {
             <div>
               <h2 className="font-display text-4xl text-noche mb-6">Conoce a las artistas</h2>
               <p className="text-text-muted text-lg mb-8">
-                AV Arte Estudio nace de la visión compartida de crear un espacio donde la técnica rigurosa y la expresión libre convivan. No somos solo un taller, somos un estudio vivo.
+                AV Arte Estudio nació de un sueño: crear un espacio donde la creatividad no tuviera límites. Un lugar cálido, cercano e inspirador, donde aprender arte también signifique crecer, compartir y vivir experiencias que despierten el talento y el potencial creativo de cada persona.
               </p>
               
               <div className="space-y-8 mb-10">
                 <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-magenta/10 rounded-full flex items-center justify-center shrink-0">
-                    <Sparkles size={24} className="text-magenta" />
+                  <div className="w-12 h-12 bg-[#750D38]/10 rounded-full flex items-center justify-center shrink-0">
+                    <Sparkles size={24} className="text-[#750D38]" />
                   </div>
                   <div>
                     <h3 className="font-display text-xl mb-1">Vianey César Martínez</h3>
-                    <p className="text-sm text-text-muted">Diseñadora, animadora digital y artista. Especialista en ilustración, modelado 3D y arte terapia.</p>
+                    <p className="text-sm text-text-muted">Artista Plástica, diseñadora, animadora 3D y docente. Especialidad en Arte Terapia y Escultura tradicional.</p>
                   </div>
                 </div>
                 
                 <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-teal/10 rounded-full flex items-center justify-center shrink-0">
-                    <Sparkles size={24} className="text-teal" />
+                  <div className="w-12 h-12 bg-[#8E1F79]/10 rounded-full flex items-center justify-center shrink-0">
+                    <Sparkles size={24} className="text-[#8E1F79]" />
                   </div>
                   <div>
                     <h3 className="font-display text-xl mb-1">Aglael S. Valdivia Ibarra</h3>
@@ -134,10 +134,10 @@ export function Home() {
             
             <div className="grid grid-cols-2 gap-4">
               <div className="aspect-[3/4] bg-noche/10 overflow-hidden">
-                <img src="/Fotografia/Vianey Agla/DSC_5361.JPG" alt="Vianey" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" />
+                <img src="/Fotografia/Artistas/DSC_5306.JPG" alt="Vianey" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" />
               </div>
               <div className="aspect-[3/4] bg-noche/10 overflow-hidden mt-12">
-                <img src="/Fotografia/Vianey Agla/DSC_5343.JPG" alt="Aglael" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" />
+                <img src="/Fotografia/Artistas/DSC_5343.JPG" alt="Aglael" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" />
               </div>
             </div>
           </div>
@@ -145,12 +145,12 @@ export function Home() {
       </section>
       
       {/* Summer Course Banner */}
-      <section className="bg-vino text-white">
+      <section className="bg-[#8E1F79] text-white">
         <div className="max-w-7xl mx-auto px-4 py-16 md:py-20 flex flex-col md:flex-row items-center justify-between gap-8">
           <div>
             <h2 className="font-display text-3xl md:text-4xl mb-4">Curso de Verano 2026</h2>
             <p className="text-white/80 max-w-lg mb-0 text-lg">
-              Arte, reciclaje y tecnología para niños y jóvenes de 7 a 17 años. Del 27 de julio al 21 de agosto.
+              Arte, reciclaje y tecnología para niños y jóvenes de 7 a 17 años. Del 27 de Julio al 21 de Agosto.
             </p>
           </div>
           <Link to="/curso-verano" className="px-8 py-4 bg-white text-vino font-medium text-sm hover:bg-crema transition-colors whitespace-nowrap">

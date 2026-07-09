@@ -62,6 +62,9 @@ export function SummerCourse() {
                 <li className="flex items-center gap-2 text-noche/80"><Check size={16} className="text-naranja" /> Conceptos: anatomía fantástica, volumen, texturas.</li>
                 <li className="flex items-center gap-2 font-medium text-noche mt-4 bg-white p-3 border border-noche/10"><Check size={16} className="text-vino" /> Resultado: Pieza escultórica que brilla en la oscuridad.</li>
               </ul>
+              <div className="mt-6 w-full h-48 overflow-hidden bg-noche/5 border border-noche/10">
+                <img src="/Fotografia/Curso verano/Brillitos.png" alt="Criaturas Marinas" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              </div>
             </div>
             
             <div className="bg-crema p-10 border border-noche/5">
@@ -75,6 +78,9 @@ export function SummerCourse() {
                 <li className="flex items-center gap-2 text-noche/80"><Check size={16} className="text-naranja" /> Conceptos: relieve, teoría del color, electrónica básica.</li>
                 <li className="flex items-center gap-2 font-medium text-noche mt-4 bg-white p-3 border border-noche/10"><Check size={16} className="text-vino" /> Resultado: Cuadro interactivo con sistema de luz.</li>
               </ul>
+              <div className="mt-6 w-full h-48 overflow-hidden bg-noche/5 border border-noche/10">
+                <img src="/Fotografia/Curso verano/PINTURA LED2.png" alt="Cuadro Tecnológico" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              </div>
             </div>
           </div>
         </div>

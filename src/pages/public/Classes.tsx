@@ -33,7 +33,7 @@ export function Classes() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           
           {/* Adultos */}
-          <div className="bg-white p-8 md:p-12 border border-noche/5 shadow-xl">
+          <div className="flex flex-col h-full bg-white p-8 md:p-12 border border-noche/5 shadow-xl">
             <div className="inline-block px-3 py-1 bg-teal/10 text-teal font-mono text-xs font-semibold tracking-wider mb-6">
               18 AÑOS EN ADELANTE
             </div>
@@ -56,23 +56,23 @@ export function Classes() {
 
             <div className="mb-10">
                 <ImageGallery images={[
-                  '/Fotografia/Clase adultos/DSC_5131.JPG',
-                  '/Fotografia/Clase adultos/DSC_5132.JPG',
-                  '/Fotografia/Clase adultos/DSC_5142.JPG',
-                  '/Fotografia/Clase adultos/DSC_5190.JPG'
+                  '/Fotografia/Clase adultos/adulto1.png',
+                  '/Fotografia/Clase adultos/adulto2.png',
+                  '/Fotografia/Clase adultos/adulto3.JPG',
+                  '/Fotografia/Clase adultos/adulto4.JPG'
                 ]} columns={2} />
             </div>
             
-            <a href="/contacto" className="w-full block text-center py-4 bg-noche text-white font-medium hover:bg-noche-soft transition-colors">
+            <a href="/contacto" className="mt-auto w-full block text-center py-4 bg-noche text-white font-medium hover:bg-noche-soft transition-colors">
               Agenda una clase muestra
             </a>
           </div>
 
           {/* Niños */}
-          <div className="bg-white p-8 md:p-12 border border-noche/5 shadow-xl relative overflow-hidden">
+          <div className="flex flex-col h-full bg-white p-8 md:p-12 border border-noche/5 shadow-xl relative overflow-hidden">
             <div className="absolute top-0 right-0 w-32 h-32 bg-naranja/10 rounded-bl-full -z-10" />
             <div className="inline-block px-3 py-1 bg-naranja/10 text-naranja font-mono text-xs font-semibold tracking-wider mb-6">
-              HASTA 17 AÑOS
+              DE 5 A 17 AÑOS
             </div>
             <h2 className="font-display text-4xl text-noche mb-2">Niños y Jóvenes</h2>
             <div className="flex items-baseline gap-2 mb-6">
@@ -93,15 +93,15 @@ export function Classes() {
 
             <div className="mb-10">
                 <ImageGallery images={[
-                  '/Fotografia/Clase ninos/DSC_5387.JPG',
-                  '/Fotografia/Clase ninos/DSC_5390.JPG',
-                  '/Fotografia/Clase ninos/DSC_5393.JPG',
-                  '/Fotografia/Clase ninos/DSC_5400.JPG'
+                  '/Fotografia/Clase ninos/FOTO1.png',
+                  '/Fotografia/Clase ninos/FOTO2.png',
+                  '/Fotografia/Clase ninos/FOTO3.png',
+                  '/Fotografia/Clase ninos/FOTO4.png'
                 ]} columns={2} />
             </div>
             
-            <a href="/contacto" className="w-full block text-center py-4 bg-naranja text-noche font-medium hover:bg-[#ff9d2a] transition-colors">
-              Inscribe a tu hijo/a
+            <a href="/contacto" className="mt-auto w-full block text-center py-4 bg-naranja text-noche font-medium hover:bg-[#ff9d2a] transition-colors">
+              Agenda una clase muestra
             </a>
           </div>
 

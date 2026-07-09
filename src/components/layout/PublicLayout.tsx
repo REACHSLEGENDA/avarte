@@ -37,7 +37,7 @@ export function PublicLayout() {
           <div className="col-span-1 md:col-span-2">
             <img src="/logo-blanco.png" alt="AV Arte Estudio" className="h-16 mb-6" />
             <p className="text-crema-light/80 max-w-sm mb-6">
-              Un espacio para crear, aprender e inspirarte. Estudio de arte boutique en Coyoacán, CDMX.
+              Un espacio donde la creatividad, la imaginación y la expresión se convierten en herramientas para crecer, aprender y conectar. Estudio de arte en Tlalpan, CDMX.
             </p>
             <div className="flex gap-4">
               <a href="https://www.instagram.com/avarteestudio13" target="_blank" rel="noreferrer" className="hover:text-naranja transition-colors">Instagram</a>
@@ -50,7 +50,7 @@ export function PublicLayout() {
               <li><Link to="/clases" className="hover:text-naranja transition-colors">Clases Regulares</Link></li>
               <li><Link to="/talleres" className="hover:text-naranja transition-colors">Talleres de Especialización</Link></li>
               <li><Link to="/curso-verano" className="hover:text-naranja transition-colors">Curso de Verano</Link></li>
-              <li><Link to="/experiencia-romantica" className="hover:text-naranja transition-colors">Experiencia Romántica</Link></li>
+              <li><Link to="/experiencia-romantica" className="hover:text-naranja transition-colors">Experiencias Artísticas</Link></li>
             </ul>
           </div>
           <div>
