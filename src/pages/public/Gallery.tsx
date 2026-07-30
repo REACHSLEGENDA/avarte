@@ -4,28 +4,28 @@ import { Filter, X, ArrowRight, MessageCircle } from 'lucide-react';
 
 // Catálogo de la galería
 const ARTWORKS = [
-  { id: 1, title: 'Tlahuelpuchi', artist: 'Aglael Valdivia', technique: 'Óleo sobre pino', year: 2023, price: 10000, width: 46, height: 82, status: 'disponible', image: '/Fotografia/Catalogo Obra/1.png', category: 'Óleo' },
-  { id: 2, title: 'Solaría', artist: 'Aglael Valdivia', technique: 'Acrílico sobre tela', year: 2024, price: 7000, width: 50, height: 80, status: 'disponible', image: '/Fotografia/Catalogo Obra/2.png', category: 'Acrílico' },
-  { id: 3, title: 'Ofelia sobre el Tapiz', artist: 'Aglael Valdivia', technique: 'Óleo sobre madera', year: 2025, price: 10000, width: 66, height: 40, status: 'disponible', image: '/Fotografia/Catalogo Obra/3.png', category: 'Óleo' },
-  { id: 4, title: 'Kappa, yokai japones', artist: 'Aglael Valdivia', technique: 'Tintas sobre papel amate con hoja de oro', year: 2025, price: 3000, width: 'N/A', height: 'N/A', status: 'disponible', image: '/Fotografia/Catalogo Obra/4.png', category: 'Técnica Mixta' },
-  { id: 5, title: 'TLNS', artist: 'Aglael Valdivia', technique: 'Óleo sobre tela', year: 2021, price: 0, printPrice: 100, width: 30, height: 30, status: 'solo print', image: '/Fotografia/Catalogo Obra/5.png', category: 'Óleo' },
-  { id: 6, title: 'Ballenas', artist: 'Aglael Valdivia', technique: 'Acuarela', year: 2025, price: 1200, width: 21, height: 30, status: 'disponible', image: '/Fotografia/Catalogo Obra/6.png', category: 'Acuarela' },
-  { id: 7, title: '- . / .- -- ---', artist: 'Aglael Valdivia', technique: 'Pastel con agua y acrílico dorado', year: 2023, price: 0, width: 'N/A', height: 'N/A', status: 'no disponible', image: '/Fotografia/Catalogo Obra/7.png', category: 'Pastel' },
-  { id: 8, title: 'La fuerza del corazón', artist: 'Aglael Valdivia', technique: 'Escultura de resina y plastilina epóxica', year: 2024, price: 7000, width: 20, height: 35, status: 'disponible', image: '/Fotografia/Catalogo Obra/8.png', category: 'Escultura' },
-  { id: 9, title: 'Niña', artist: 'Aglael Valdivia', technique: 'Carboncillo sobre fabriano', year: 2022, price: 4000, width: 29, height: 35, status: 'disponible', image: '/Fotografia/Catalogo Obra/9.png', category: 'Carboncillo' },
-  { id: 10, title: 'Hombre', artist: 'Aglael Valdivia', technique: 'Carboncillo sobre fabriano', year: 2022, price: 4000, width: 29, height: 42, status: 'disponible', image: '/Fotografia/Catalogo Obra/10.png', category: 'Carboncillo' },
-  { id: 11, title: 'Mi Sagitaria', artist: 'Aglael Valdivia', technique: 'Tinta chica con hoja de plata', year: 2024, price: 0, printPrice: 100, width: 21, height: 30, status: 'solo print', image: '/Fotografia/Catalogo Obra/11.png', category: 'Técnica Mixta' },
-  { id: 12, title: 'Iridisente', artist: 'Aglael Valdivia', technique: 'Acrílico sobre papel', year: 2022, price: 1500, width: 30.5, height: 23, status: 'disponible', image: '/Fotografia/Catalogo Obra/12.png', category: 'Acrílico' },
-  { id: 13, title: 'Reproducción', artist: 'Aglael Valdivia', technique: 'Punta seca 2/50', year: 2019, price: 700, width: 24, height: 18, status: 'disponible', image: '/Fotografia/Catalogo Obra/13.png', category: 'Grabado' },
-  { id: 14, title: 'Sin título', artist: 'Aglael Valdivia', technique: 'Óleo sobre lienzo', year: 2021, price: 0, printPrice: 100, width: 60, height: 80, status: 'solo print', image: '/Fotografia/Catalogo Obra/14.png', category: 'Óleo' },
-  { id: 15, title: 'IT', artist: 'Aglael Valdivia', technique: 'Libro intervenido', year: 2022, price: 1500, width: 'N/A', height: 'N/A', status: 'disponible', image: '/Fotografia/Catalogo Obra/15.png', category: 'Libro de Artista' },
-  { id: 16, title: 'Street fairy', artist: 'Aglael Valdivia', technique: 'Linograbado 1/50', year: 2025, price: 80, width: 10, height: 15, status: 'disponible', image: '/Fotografia/Catalogo Obra/16.png', category: 'Grabado' },
-  { id: 17, title: 'Vida', artist: 'Aglael Valdivia', technique: 'Linograbado 1/50', year: 2020, price: 80, width: 10, height: 10, status: 'disponible', image: '/Fotografia/Catalogo Obra/17.png', category: 'Grabado' },
-  { id: 18, title: 'Axolotl', artist: 'Aglael Valdivia', technique: 'Linograbado 1/20', year: 2019, price: 300, width: 20, height: 30, status: 'disponible', image: '/Fotografia/Catalogo Obra/18.png', category: 'Grabado' },
-  { id: 20, title: 'El faro', artist: 'Aglael Valdivia', technique: 'Agua tinta y agua fuerte, sobre cobre 1/25', year: 2019, price: 600, width: 25, height: 18, status: 'disponible', image: '/Fotografia/Catalogo Obra/20.png', category: 'Grabado' },
-  { id: 21, title: 'La venganza de la reina Ana', artist: 'Aglael Valdivia', technique: 'Agua fuerte y Aguatinta 1/25', year: 2019, price: 600, width: 25, height: 18, status: 'disponible', image: '/Fotografia/Catalogo Obra/21.png', category: 'Grabado' },
-  { id: 22, title: 'Guerrera Maya', artist: 'Aglael Valdivia', technique: 'Óleo sobre lienzo', year: 'En proceso', price: 0, width: 50, height: 70, status: 'no disponible', image: '/Fotografia/Catalogo Obra/22.png', category: 'Óleo' },
-  { id: 23, title: 'Replica barroca', artist: 'Aglael Valdivia', technique: 'Óleo sobre lienzo', year: 2020, price: 4000, width: 30, height: 40, status: 'disponible', image: '/Fotografia/Catalogo Obra/23.png', category: 'Óleo' },
+  { id: 1, title: 'Tlahuelpuchi', artist: 'Aglael Valdivia', technique: 'Óleo sobre pino', year: 2023, price: 10000, width: 46, height: 82, status: 'disponible', image: '/Fotografia/Aglael_Clean/1.png', category: 'Óleo' },
+  { id: 2, title: 'Solaría', artist: 'Aglael Valdivia', technique: 'Acrílico sobre tela', year: 2024, price: 7000, width: 50, height: 80, status: 'disponible', image: '/Fotografia/Aglael_Clean/2.png', category: 'Acrílico' },
+  { id: 3, title: 'Ofelia sobre el Tapiz', artist: 'Aglael Valdivia', technique: 'Óleo sobre madera', year: 2025, price: 10000, width: 66, height: 40, status: 'disponible', image: '/Fotografia/Aglael_Clean/3.png', category: 'Óleo' },
+  { id: 4, title: 'Kappa, yokai japones', artist: 'Aglael Valdivia', technique: 'Tintas sobre papel amate con hoja de oro', year: 2025, price: 3000, width: 'N/A', height: 'N/A', status: 'disponible', image: '/Fotografia/Aglael_Clean/4.png', category: 'Técnica Mixta' },
+  { id: 5, title: 'TLNS', artist: 'Aglael Valdivia', technique: 'Óleo sobre tela', year: 2021, price: 0, printPrice: 100, width: 30, height: 30, status: 'solo print', image: '/Fotografia/Aglael_Clean/5.png', category: 'Óleo' },
+  { id: 6, title: 'Ballenas', artist: 'Aglael Valdivia', technique: 'Acuarela', year: 2025, price: 1200, width: 21, height: 30, status: 'disponible', image: '/Fotografia/Aglael_Clean/6.png', category: 'Acuarela' },
+  { id: 8, title: 'La fuerza del corazón', artist: 'Aglael Valdivia', technique: 'Escultura de resina y plastilina epóxica', year: 2024, price: 7000, width: 20, height: 35, status: 'disponible', image: '/Fotografia/Aglael_Clean/10.png', category: 'Escultura' },
+  { id: 9, title: 'Niña', artist: 'Aglael Valdivia', technique: 'Carboncillo sobre fabriano', year: 2022, price: 4000, width: 29, height: 35, status: 'disponible', image: '/Fotografia/Aglael_Clean/7.png', category: 'Carboncillo' },
+  { id: 10, title: 'Hombre', artist: 'Aglael Valdivia', technique: 'Carboncillo sobre fabriano', year: 2022, price: 4000, width: 29, height: 42, status: 'disponible', image: '/Fotografia/Aglael_Clean/8.png', category: 'Carboncillo' },
+  { id: 11, title: 'Mi Sagitaria', artist: 'Aglael Valdivia', technique: 'Tinta chica con hoja de plata', year: 2024, price: 0, printPrice: 100, width: 21, height: 30, status: 'solo print', image: '/Fotografia/Aglael_Clean/9.png', category: 'Técnica Mixta' },
+  { id: 12, title: 'Iridisente', artist: 'Aglael Valdivia', technique: 'Acrílico sobre papel', year: 2022, price: 1500, width: 30.5, height: 23, status: 'disponible', image: '/Fotografia/Aglael_Clean/11.png', category: 'Acrílico' },
+  { id: 13, title: 'Reproducción', artist: 'Aglael Valdivia', technique: 'Punta seca 2/50', year: 2019, price: 700, width: 24, height: 18, status: 'disponible', image: '/Fotografia/Aglael_Clean/12.png', category: 'Grabado' },
+  { id: 14, title: 'Sin título', artist: 'Aglael Valdivia', technique: 'Óleo sobre lienzo', year: 2021, price: 0, printPrice: 100, width: 60, height: 80, status: 'solo print', image: '/Fotografia/Aglael_Clean/13.png', category: 'Óleo' },
+  { id: 15, title: 'IT', artist: 'Aglael Valdivia', technique: 'Libro intervenido', year: 2022, price: 1500, width: 'N/A', height: 'N/A', status: 'disponible', image: '/Fotografia/Aglael_Clean/14.png', category: 'Libro de Artista' },
+  { id: 16, title: 'Street fairy', artist: 'Aglael Valdivia', technique: 'Linograbado 1/50', year: 2025, price: 80, width: 10, height: 15, status: 'disponible', image: '/Fotografia/Aglael_Clean/15.png', category: 'Grabado' },
+  { id: 17, title: 'Vida', artist: 'Aglael Valdivia', technique: 'Linograbado 1/50', year: 2020, price: 80, width: 10, height: 10, status: 'disponible', image: '/Fotografia/Aglael_Clean/16.png', category: 'Grabado' },
+  { id: 18, title: 'Axolotl', artist: 'Aglael Valdivia', technique: 'Linograbado 1/20', year: 2019, price: 300, width: 20, height: 30, status: 'disponible', image: '/Fotografia/Aglael_Clean/18.png', category: 'Grabado' },
+  { id: 19, title: 'Pachamama', artist: 'Aglael Valdivia', technique: 'Linograbado 1/20', year: 2019, price: 300, width: 20, height: 30, status: 'disponible', image: '/Fotografia/Aglael_Clean/17.png', category: 'Grabado' },
+  { id: 20, title: 'El faro', artist: 'Aglael Valdivia', technique: 'Agua tinta y agua fuerte, sobre cobre 1/25', year: 2019, price: 600, width: 25, height: 18, status: 'disponible', image: '/Fotografia/Aglael_Clean/19.png', category: 'Grabado' },
+  { id: 21, title: 'La venganza de la reina Ana', artist: 'Aglael Valdivia', technique: 'Agua fuerte y Aguatinta 1/25', year: 2019, price: 600, width: 25, height: 18, status: 'disponible', image: '/Fotografia/Aglael_Clean/20.png', category: 'Grabado' },
+  { id: 22, title: 'Guerrera Maya', artist: 'Aglael Valdivia', technique: 'Óleo sobre lienzo', year: 'En proceso', price: 0, width: 50, height: 70, status: 'no disponible', image: '/Fotografia/Aglael_Clean/21.png', category: 'Óleo' },
+  { id: 23, title: 'Replica barroca', artist: 'Aglael Valdivia', technique: 'Óleo sobre lienzo', year: 2020, price: 4000, width: 30, height: 40, status: 'disponible', image: '/Fotografia/Aglael_Clean/22.png', category: 'Óleo' },
   { id: 24, title: 'El ángel caído (Réplica Cabanel)', artist: 'Vianey César', technique: 'Óleo sobre madera', year: 2023, price: 3800, width: 32.5, height: 26.5, status: 'disponible', image: '/Fotografia/Catalogo Obra/Cavanel1.png', category: 'Óleo' },
   { id: 25, title: 'Memento Vitae (Recuerda la vida)', artist: 'Vianey César', technique: 'Óleo sobre lienzo', year: 2023, price: 6000, width: 50, height: 40, status: 'disponible', image: '/Fotografia/Catalogo Obra/Memento Vitae.png', category: 'Óleo' },
   { id: 26, title: 'Desesperación', artist: 'Vianey César', technique: 'Carbón sobre lienzo', year: 2024, price: 7500, width: 50, height: 40, status: 'disponible', image: '/Fotografia/Catalogo Obra/Desesperacion.png', category: 'Carboncillo' },
@@ -95,7 +95,7 @@ export function Gallery() {
 
       {/* Masonry Grid (CSS-based approximations for now) */}
       <section className="py-16 px-4 max-w-7xl mx-auto">
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+        <div className="columns-1 sm:columns-2 lg:columns-3 gap-6">
           <AnimatePresence>
             {filteredArtworks.map((art) => (
               <motion.div 
@@ -104,16 +104,16 @@ export function Gallery() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 key={art.id} 
-                className="break-inside-avoid relative group bg-white border border-noche/5 cursor-pointer"
+                className="break-inside-avoid mb-8 relative group bg-white border border-noche/10 shadow-md rounded-xl overflow-hidden cursor-pointer flex flex-col"
                 onClick={() => setSelectedArtwork(art)}
               >
-                <div className="relative overflow-hidden">
+                <div className="relative overflow-hidden w-full">
                   <img src={art.image} alt={art.title} className="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500" />
                   
                   {/* Status Badges */}
                   {art.status !== 'disponible' && (
                     <div className="absolute top-4 left-4">
-                      <span className={`px-3 py-1 text-xs font-mono font-semibold tracking-wider text-white ${art.status === 'vendida' || art.status === 'no disponible' ? 'bg-noche' : art.status === 'reservada' ? 'bg-vino' : 'bg-teal'}`}>
+                      <span className={`px-3 py-1 text-xs font-mono font-semibold tracking-wider text-white shadow-sm rounded-full ${art.status === 'vendida' || art.status === 'no disponible' ? 'bg-noche' : art.status === 'reservada' ? 'bg-vino' : 'bg-teal'}`}>
                         {art.status.toUpperCase()}
                       </span>
                     </div>
@@ -121,20 +121,20 @@ export function Gallery() {
                   
                   {/* Hover Overlay */}
                   <div className="absolute inset-0 bg-noche/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                    <span className="text-white font-medium flex items-center gap-2">Ver Detalles <ArrowRight size={16} /></span>
+                    <span className="text-white font-medium flex items-center gap-2 bg-black/50 px-4 py-2 rounded-full backdrop-blur-sm">Ver Detalles <ArrowRight size={16} /></span>
                   </div>
                 </div>
                 
-                <div className="p-5">
-                  <h3 className="font-display text-xl text-noche mb-1">{art.title}</h3>
-                  <div className="text-sm text-text-muted mb-3">{art.artist}, {art.year}</div>
-                  <div className="flex items-center justify-between mt-4 pt-4 border-t border-noche/5">
-                    <div className="text-xs text-text-muted">{art.technique}</div>
+                <div className="p-6 flex-grow flex flex-col">
+                  <h3 className="font-display text-xl text-noche mb-1 leading-tight">{art.title}</h3>
+                  <div className="text-sm text-text-muted mb-4">{art.artist}, {art.year}</div>
+                  <div className="flex items-center justify-between mt-auto pt-4 border-t border-noche/10">
+                    <div className="text-xs text-text-muted max-w-[50%] truncate pr-2" title={art.technique}>{art.technique}</div>
                     {art.status === 'disponible' ? (
-                      <div className="font-display font-medium text-lg text-noche">${art.price.toLocaleString()} MXN</div>
+                      <div className="font-display font-semibold text-lg text-noche whitespace-nowrap">${art.price.toLocaleString()} MXN</div>
                     ) : (
-                      <div className="font-display font-medium text-lg text-text-muted/50">
-                        {art.status === 'solo print' ? `$${art.printPrice?.toLocaleString()} MXN (Print)` : 'No Disponible'}
+                      <div className="font-display font-medium text-lg text-text-muted/60 whitespace-nowrap">
+                        {art.status === 'solo print' ? `$${art.printPrice?.toLocaleString()} (Print)` : 'No Disp.'}
                       </div>
                     )}
                   </div>
