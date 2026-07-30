@@ -10,6 +10,7 @@ import { SummerCourse } from './pages/public/SummerCourse';
 import { Workshops } from './pages/public/Workshops';
 import { RomanticExperience } from './pages/public/RomanticExperience';
 import { Gallery } from './pages/public/Gallery';
+import { DebugGallery } from './pages/public/DebugGallery';
 import { Blog } from './pages/public/Blog';
 import { Videos } from './pages/public/Videos';
 import { Contact } from './pages/public/Contact';
@@ -30,6 +31,7 @@ function App() {
           <Route path="blog" element={<Blog />} />
           <Route path="videos" element={<Videos />} />
           <Route path="contacto" element={<Contact />} />
+          <Route path="debug-gallery" element={<DebugGallery />} />
           <Route path="*" element={<div className="p-24 text-center">404 - Página no encontrada</div>} />
         </Route>
 

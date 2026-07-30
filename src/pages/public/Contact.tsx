@@ -91,7 +91,9 @@ export function Contact() {
                 <li className="flex items-start gap-3">
                   <MapPin size={20} className="text-vino shrink-0 mt-1" />
                   <span>
-                    <a href="https://maps.app.goo.gl/swB7sDifqeNKpd878?g_st=iw" target="_blank" rel="noreferrer" className="hover:text-vino transition-colors">Tlalpan, CDMX</a>
+                    <a href="https://maps.app.goo.gl/swB7sDifqeNKpd878?g_st=iw" target="_blank" rel="noreferrer" className="hover:text-vino transition-colors">
+                      Plaza las hadas Calz de las Brujas 303, Coapa, Rinconada de las Hadas,Tlalpan,14390 CDMX.
+                    </a>
                     <br/><span className="text-sm">(Da clic para abrir en Google Maps)</span>
                   </span>
                 </li>
@@ -101,9 +103,9 @@ export function Contact() {
                 </li>
               </ul>
               
-              <div className="w-full h-48 bg-noche/5 rounded-lg overflow-hidden border border-noche/10 shadow-inner">
+              <div className="w-full h-64 bg-noche/5 rounded-lg overflow-hidden border border-noche/10 shadow-inner">
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120534.61330364654!2d-99.23126744033282!3d19.252030805370215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce00523450e163%3A0xc4eb04ea20f8de92!2sTlalpan%20Centro%2C%20Tlalpan%2C%2014000%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1sen!2smx!4v1700000000000!5m2!1sen!2smx" 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.6514289357683!2d-99.12331092532949!3d19.29751884498197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce015cb410dfb3%3A0x47f6d74a3cb7cce!2sAV%20Arte%20Estudio!5e0!3m2!1sen!2smx!4v1785384641607!5m2!1sen!2smx" 
                   width="100%" 
                   height="100%" 
                   style={{ border: 0 }} 

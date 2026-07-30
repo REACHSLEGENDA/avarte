@@ -7,7 +7,9 @@ export function SummerCourse() {
       {/* Hero */}
       <section className="relative pt-32 pb-24 px-4 bg-vino text-white overflow-hidden">
         {/* Background elements */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+        <div className="absolute inset-0 opacity-40 mix-blend-overlay bg-[url('/studio/WhatsApp%20Image%202026-06-16%20at%2011.02.45%20PM.jpeg')] bg-cover bg-center" />
+        <div className="absolute inset-0 bg-gradient-to-t from-vino via-vino/80 to-transparent" />
+        <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-naranja/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/4" />
         
         <div className="max-w-5xl mx-auto relative z-10">
@@ -51,34 +53,34 @@ export function SummerCourse() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="bg-crema p-10 border border-noche/5">
+            <div className="bg-crema p-10 border border-noche/5 flex flex-col h-full">
               <span className="text-naranja font-mono font-bold tracking-widest text-sm mb-4 block">ACTIVIDAD 01</span>
               <h3 className="font-display text-3xl text-noche mb-4">Escultura Fantástica de Criaturas Marinas</h3>
               <p className="text-text-muted mb-6 leading-relaxed">
                 Construcción tridimensional para fomentar la observación y la creatividad a través de volúmenes complejos.
               </p>
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3 mb-8 flex flex-col flex-grow">
                 <li className="flex items-center gap-2 text-noche/80"><Check size={16} className="text-naranja" /> Materiales: limpiapipas, gis pastel, pintura fotoluminiscente.</li>
                 <li className="flex items-center gap-2 text-noche/80"><Check size={16} className="text-naranja" /> Conceptos: anatomía fantástica, volumen, texturas.</li>
-                <li className="flex items-center gap-2 font-medium text-noche mt-4 bg-white p-3 border border-noche/10"><Check size={16} className="text-vino" /> Resultado: Pieza escultórica que brilla en la oscuridad.</li>
+                <li className="flex items-center gap-2 font-medium text-noche mt-auto bg-white p-3 border border-noche/10"><Check size={16} className="text-vino" /> Resultado: Pieza escultórica que brilla en la oscuridad.</li>
               </ul>
-              <div className="mt-6 w-full h-48 overflow-hidden bg-noche/5 border border-noche/10">
+              <div className="w-full h-48 overflow-hidden bg-noche/5 border border-noche/10 shrink-0">
                 <img src="/Fotografia/Curso verano/Brillitos.png" alt="Criaturas Marinas" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
             
-            <div className="bg-crema p-10 border border-noche/5">
+            <div className="bg-crema p-10 border border-noche/5 flex flex-col h-full">
               <span className="text-naranja font-mono font-bold tracking-widest text-sm mb-4 block">ACTIVIDAD 02</span>
               <h3 className="font-display text-3xl text-noche mb-4">Cuadro Tecnológico con Iluminación LED</h3>
               <p className="text-text-muted mb-6 leading-relaxed">
                 Una obra bidimensional que cobra vida. Arte + Tecnología + Sustentabilidad en un solo proyecto.
               </p>
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3 mb-8 flex flex-col flex-grow">
                 <li className="flex items-center gap-2 text-noche/80"><Check size={16} className="text-naranja" /> Materiales: elementos reciclados, acrílicos, circuito básico LED.</li>
                 <li className="flex items-center gap-2 text-noche/80"><Check size={16} className="text-naranja" /> Conceptos: relieve, teoría del color, electrónica básica.</li>
-                <li className="flex items-center gap-2 font-medium text-noche mt-4 bg-white p-3 border border-noche/10"><Check size={16} className="text-vino" /> Resultado: Cuadro interactivo con sistema de luz.</li>
+                <li className="flex items-center gap-2 font-medium text-noche mt-auto bg-white p-3 border border-noche/10"><Check size={16} className="text-vino" /> Resultado: Cuadro interactivo con sistema de luz.</li>
               </ul>
-              <div className="mt-6 w-full h-48 overflow-hidden bg-noche/5 border border-noche/10">
+              <div className="w-full h-48 overflow-hidden bg-noche/5 border border-noche/10 shrink-0">
                 <img src="/Fotografia/Curso verano/PINTURA LED2.png" alt="Cuadro Tecnológico" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
             </div>

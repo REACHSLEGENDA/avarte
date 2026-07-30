@@ -2,14 +2,39 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Filter, X, ArrowRight, MessageCircle } from 'lucide-react';
 
-// Mock data para la galería
+// Catálogo de la galería
 const ARTWORKS = [
-  { id: 1, title: 'Memoria en Azul', artist: 'Vianey César', technique: 'Óleo sobre lienzo', year: 2025, price: 15000, printPrice: 1500, width: 80, height: 100, status: 'disponible', image: '/Fotografia/Catalogo Obra/DSC_5269.JPG', category: 'Óleo' },
-  { id: 2, title: 'Formas Orgánicas', artist: 'Aglael Valdivia', technique: 'Acuarela', year: 2026, price: 4500, printPrice: 1200, width: 30, height: 40, status: 'disponible', image: '/Fotografia/Catalogo Obra/DSC_5272.JPG', category: 'Acuarela' },
-  { id: 3, title: 'Deconstrucción I', artist: 'Vianey César', technique: 'Acrílico', year: 2024, price: 8000, printPrice: 1500, width: 60, height: 60, status: 'disponible', image: '/Fotografia/Catalogo Obra/DSC_5411.JPG', category: 'Acrílico' },
-  { id: 4, title: 'Retrato de la Tierra', artist: 'Aglael Valdivia', technique: 'Pigmentos naturales', year: 2025, price: 12000, printPrice: 1800, width: 70, height: 90, status: 'disponible', image: '/Fotografia/Catalogo Obra/_5212.JPG', category: 'Técnica Mixta' },
-  { id: 5, title: 'Grabado Nocturno', artist: 'Aglael Valdivia', technique: 'Linóleo', year: 2026, price: 2500, printPrice: 800, width: 25, height: 25, status: 'disponible', image: '/Fotografia/Catalogo Obra/_5254.JPG', category: 'Grabado' },
-  { id: 6, title: 'Estudio de Luz', artist: 'Vianey César', technique: 'Gis Pastel', year: 2025, price: 3800, printPrice: 1200, width: 40, height: 50, status: 'disponible', image: '/Fotografia/Catalogo Obra/DSC_5486.JPG', category: 'Pastel' },
+  { id: 1, title: 'Tlahuelpuchi', artist: 'Aglael Valdivia', technique: 'Óleo sobre pino', year: 2023, price: 10000, width: 46, height: 82, status: 'disponible', image: '/Fotografia/Catalogo Obra/1.png', category: 'Óleo' },
+  { id: 2, title: 'Solaría', artist: 'Aglael Valdivia', technique: 'Acrílico sobre tela', year: 2024, price: 7000, width: 50, height: 80, status: 'disponible', image: '/Fotografia/Catalogo Obra/2.png', category: 'Acrílico' },
+  { id: 3, title: 'Ofelia sobre el Tapiz', artist: 'Aglael Valdivia', technique: 'Óleo sobre madera', year: 2025, price: 10000, width: 66, height: 40, status: 'disponible', image: '/Fotografia/Catalogo Obra/3.png', category: 'Óleo' },
+  { id: 4, title: 'Kappa, yokai japones', artist: 'Aglael Valdivia', technique: 'Tintas sobre papel amate con hoja de oro', year: 2025, price: 3000, width: 'N/A', height: 'N/A', status: 'disponible', image: '/Fotografia/Catalogo Obra/4.png', category: 'Técnica Mixta' },
+  { id: 5, title: 'TLNS', artist: 'Aglael Valdivia', technique: 'Óleo sobre tela', year: 2021, price: 0, printPrice: 100, width: 30, height: 30, status: 'solo print', image: '/Fotografia/Catalogo Obra/5.png', category: 'Óleo' },
+  { id: 6, title: 'Ballenas', artist: 'Aglael Valdivia', technique: 'Acuarela', year: 2025, price: 1200, width: 21, height: 30, status: 'disponible', image: '/Fotografia/Catalogo Obra/6.png', category: 'Acuarela' },
+  { id: 7, title: '- . / .- -- ---', artist: 'Aglael Valdivia', technique: 'Pastel con agua y acrílico dorado', year: 2023, price: 0, width: 'N/A', height: 'N/A', status: 'no disponible', image: '/Fotografia/Catalogo Obra/7.png', category: 'Pastel' },
+  { id: 8, title: 'La fuerza del corazón', artist: 'Aglael Valdivia', technique: 'Escultura de resina y plastilina epóxica', year: 2024, price: 7000, width: 20, height: 35, status: 'disponible', image: '/Fotografia/Catalogo Obra/8.png', category: 'Escultura' },
+  { id: 9, title: 'Niña', artist: 'Aglael Valdivia', technique: 'Carboncillo sobre fabriano', year: 2022, price: 4000, width: 29, height: 35, status: 'disponible', image: '/Fotografia/Catalogo Obra/9.png', category: 'Carboncillo' },
+  { id: 10, title: 'Hombre', artist: 'Aglael Valdivia', technique: 'Carboncillo sobre fabriano', year: 2022, price: 4000, width: 29, height: 42, status: 'disponible', image: '/Fotografia/Catalogo Obra/10.png', category: 'Carboncillo' },
+  { id: 11, title: 'Mi Sagitaria', artist: 'Aglael Valdivia', technique: 'Tinta chica con hoja de plata', year: 2024, price: 0, printPrice: 100, width: 21, height: 30, status: 'solo print', image: '/Fotografia/Catalogo Obra/11.png', category: 'Técnica Mixta' },
+  { id: 12, title: 'Iridisente', artist: 'Aglael Valdivia', technique: 'Acrílico sobre papel', year: 2022, price: 1500, width: 30.5, height: 23, status: 'disponible', image: '/Fotografia/Catalogo Obra/12.png', category: 'Acrílico' },
+  { id: 13, title: 'Reproducción', artist: 'Aglael Valdivia', technique: 'Punta seca 2/50', year: 2019, price: 700, width: 24, height: 18, status: 'disponible', image: '/Fotografia/Catalogo Obra/13.png', category: 'Grabado' },
+  { id: 14, title: 'Sin título', artist: 'Aglael Valdivia', technique: 'Óleo sobre lienzo', year: 2021, price: 0, printPrice: 100, width: 60, height: 80, status: 'solo print', image: '/Fotografia/Catalogo Obra/14.png', category: 'Óleo' },
+  { id: 15, title: 'IT', artist: 'Aglael Valdivia', technique: 'Libro intervenido', year: 2022, price: 1500, width: 'N/A', height: 'N/A', status: 'disponible', image: '/Fotografia/Catalogo Obra/15.png', category: 'Libro de Artista' },
+  { id: 16, title: 'Street fairy', artist: 'Aglael Valdivia', technique: 'Linograbado 1/50', year: 2025, price: 80, width: 10, height: 15, status: 'disponible', image: '/Fotografia/Catalogo Obra/16.png', category: 'Grabado' },
+  { id: 17, title: 'Vida', artist: 'Aglael Valdivia', technique: 'Linograbado 1/50', year: 2020, price: 80, width: 10, height: 10, status: 'disponible', image: '/Fotografia/Catalogo Obra/17.png', category: 'Grabado' },
+  { id: 18, title: 'Axolotl', artist: 'Aglael Valdivia', technique: 'Linograbado 1/20', year: 2019, price: 300, width: 20, height: 30, status: 'disponible', image: '/Fotografia/Catalogo Obra/18.png', category: 'Grabado' },
+  { id: 20, title: 'El faro', artist: 'Aglael Valdivia', technique: 'Agua tinta y agua fuerte, sobre cobre 1/25', year: 2019, price: 600, width: 25, height: 18, status: 'disponible', image: '/Fotografia/Catalogo Obra/20.png', category: 'Grabado' },
+  { id: 21, title: 'La venganza de la reina Ana', artist: 'Aglael Valdivia', technique: 'Agua fuerte y Aguatinta 1/25', year: 2019, price: 600, width: 25, height: 18, status: 'disponible', image: '/Fotografia/Catalogo Obra/21.png', category: 'Grabado' },
+  { id: 22, title: 'Guerrera Maya', artist: 'Aglael Valdivia', technique: 'Óleo sobre lienzo', year: 'En proceso', price: 0, width: 50, height: 70, status: 'no disponible', image: '/Fotografia/Catalogo Obra/22.png', category: 'Óleo' },
+  { id: 23, title: 'Replica barroca', artist: 'Aglael Valdivia', technique: 'Óleo sobre lienzo', year: 2020, price: 4000, width: 30, height: 40, status: 'disponible', image: '/Fotografia/Catalogo Obra/23.png', category: 'Óleo' },
+  { id: 24, title: 'El ángel caído (Réplica Cabanel)', artist: 'Vianey César', technique: 'Óleo sobre madera', year: 2023, price: 3800, width: 32.5, height: 26.5, status: 'disponible', image: '/Fotografia/Catalogo Obra/Cavanel1.png', category: 'Óleo' },
+  { id: 25, title: 'Memento Vitae (Recuerda la vida)', artist: 'Vianey César', technique: 'Óleo sobre lienzo', year: 2023, price: 6000, width: 50, height: 40, status: 'disponible', image: '/Fotografia/Catalogo Obra/Memento Vitae.png', category: 'Óleo' },
+  { id: 26, title: 'Desesperación', artist: 'Vianey César', technique: 'Carbón sobre lienzo', year: 2024, price: 7500, width: 50, height: 40, status: 'disponible', image: '/Fotografia/Catalogo Obra/Desesperacion.png', category: 'Carboncillo' },
+  { id: 27, title: 'La Mujer Roja', artist: 'Vianey César', technique: 'Acrílico sobre lienzo', year: 2019, price: 9000, width: 70, height: 50, status: 'disponible', image: '/Fotografia/Catalogo Obra/La Mujer Roja.png', category: 'Acrílico' },
+  { id: 28, title: 'El camino a Mictlán', artist: 'Vianey César', technique: 'Óleo sobre lienzo', year: 2019, price: 9000, width: 80, height: 60, status: 'disponible', image: '/Fotografia/Catalogo Obra/El camino al Mictlan.png', category: 'Óleo' },
+  { id: 29, title: 'Entre besos y deseos', artist: 'Vianey César', technique: 'Digital con hoja de oro', year: 2025, price: 4000, width: 'N/A', height: 'N/A', status: 'disponible', image: '/Fotografia/Catalogo Obra/Entre besos y deseos.png', category: 'Técnica Mixta' },
+  { id: 30, title: 'Noviembre (Réplica Racrufi)', artist: 'Vianey César', technique: 'Óleo sobre lienzo', year: 2019, price: 4500, width: 40, height: 50, status: 'disponible', image: '/Fotografia/Catalogo Obra/Noviembre.png', category: 'Óleo' },
+  { id: 31, title: 'Psicosis', artist: 'Vianey César', technique: 'Acrílico sobre madera', year: 2024, price: 4000, width: 40, height: 56, status: 'disponible', image: '/Fotografia/Catalogo Obra/Psicosis.png', category: 'Acrílico' },
+  { id: 32, title: 'Bestiario Quilin', artist: 'Vianey César', technique: 'Chapopote con Papel Amate e incrustación de oro', year: 2025, price: 5000, width: 40, height: 50, status: 'disponible', image: '/Fotografia/Catalogo Obra/Bestiario Quilin.png', category: 'Técnica Mixta' },
 ];
 
 export function Gallery() {
@@ -88,7 +113,7 @@ export function Gallery() {
                   {/* Status Badges */}
                   {art.status !== 'disponible' && (
                     <div className="absolute top-4 left-4">
-                      <span className={`px-3 py-1 text-xs font-mono font-semibold tracking-wider text-white ${art.status === 'vendida' ? 'bg-noche' : 'bg-vino'}`}>
+                      <span className={`px-3 py-1 text-xs font-mono font-semibold tracking-wider text-white ${art.status === 'vendida' || art.status === 'no disponible' ? 'bg-noche' : art.status === 'reservada' ? 'bg-vino' : 'bg-teal'}`}>
                         {art.status.toUpperCase()}
                       </span>
                     </div>
@@ -108,7 +133,9 @@ export function Gallery() {
                     {art.status === 'disponible' ? (
                       <div className="font-display font-medium text-lg text-noche">${art.price.toLocaleString()} MXN</div>
                     ) : (
-                      <div className="font-display font-medium text-lg text-text-muted/50">${art.price.toLocaleString()} MXN</div>
+                      <div className="font-display font-medium text-lg text-text-muted/50">
+                        {art.status === 'solo print' ? `$${art.printPrice?.toLocaleString()} MXN (Print)` : 'No Disponible'}
+                      </div>
                     )}
                   </div>
                 </div>
@@ -168,7 +195,7 @@ export function Gallery() {
                   </div>
                   <div className="flex justify-between">
                     <span className="font-medium text-text-muted">Dimensiones</span>
-                    <span>{selectedArtwork.width} × {selectedArtwork.height} cm</span>
+                    <span>{selectedArtwork.width} × {selectedArtwork.height} {selectedArtwork.width !== 'N/A' && 'cm'}</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="font-medium text-text-muted">Categoría</span>
@@ -179,20 +206,24 @@ export function Gallery() {
                 <div className="flex flex-col gap-2 mb-8">
                   <span className="font-medium text-text-muted mb-2">Formato de compra</span>
                   <div className="grid grid-cols-2 gap-4">
-                    <button 
-                      onClick={() => setPurchaseFormat('original')}
-                      className={`p-3 border text-center transition-colors ${purchaseFormat === 'original' ? 'border-noche bg-noche text-white' : 'border-noche/20 hover:border-noche/50 text-noche'}`}
-                    >
-                      <div className="font-display font-medium">Original</div>
-                      <div className="text-sm opacity-80">${selectedArtwork.price.toLocaleString()} MXN</div>
-                    </button>
-                    <button 
-                      onClick={() => setPurchaseFormat('print')}
-                      className={`p-3 border text-center transition-colors ${purchaseFormat === 'print' ? 'border-noche bg-noche text-white' : 'border-noche/20 hover:border-noche/50 text-noche'}`}
-                    >
-                      <div className="font-display font-medium">Print Fine Art</div>
-                      <div className="text-sm opacity-80">${selectedArtwork.printPrice ? selectedArtwork.printPrice.toLocaleString() : '1,500'} MXN</div>
-                    </button>
+                    {selectedArtwork.status !== 'solo print' && selectedArtwork.status !== 'no disponible' && (
+                      <button 
+                        onClick={() => setPurchaseFormat('original')}
+                        className={`p-3 border text-center transition-colors ${purchaseFormat === 'original' ? 'border-noche bg-noche text-white' : 'border-noche/20 hover:border-noche/50 text-noche'}`}
+                      >
+                        <div className="font-display font-medium">Original</div>
+                        <div className="text-sm opacity-80">${selectedArtwork.price.toLocaleString()} MXN</div>
+                      </button>
+                    )}
+                    {(selectedArtwork.printPrice || selectedArtwork.status === 'solo print') && (
+                      <button 
+                        onClick={() => setPurchaseFormat('print')}
+                        className={`p-3 border text-center transition-colors ${purchaseFormat === 'print' ? 'border-noche bg-noche text-white' : 'border-noche/20 hover:border-noche/50 text-noche'}`}
+                      >
+                        <div className="font-display font-medium">Print Fine Art</div>
+                        <div className="text-sm opacity-80">${selectedArtwork.printPrice ? selectedArtwork.printPrice.toLocaleString() : '1,500'} MXN</div>
+                      </button>
+                    )}
                   </div>
                 </div>
                 
