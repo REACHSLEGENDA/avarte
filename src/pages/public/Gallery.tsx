@@ -95,7 +95,7 @@ export function Gallery() {
 
       {/* Masonry Grid (CSS-based approximations for now) */}
       <section className="py-16 px-4 max-w-7xl mx-auto">
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <AnimatePresence>
             {filteredArtworks.map((art) => (
               <motion.div 
@@ -104,7 +104,7 @@ export function Gallery() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 key={art.id} 
-                className="break-inside-avoid mb-8 relative group bg-white border border-noche/10 shadow-md rounded-xl overflow-hidden cursor-pointer flex flex-col"
+                className="relative group bg-white border border-noche/10 shadow-md rounded-xl overflow-hidden cursor-pointer flex flex-col h-full"
                 onClick={() => setSelectedArtwork(art)}
               >
                 <div className="relative overflow-hidden w-full">
@@ -215,13 +215,13 @@ export function Gallery() {
                         <div className="text-sm opacity-80">${selectedArtwork.price.toLocaleString()} MXN</div>
                       </button>
                     )}
-                    {(selectedArtwork.printPrice || selectedArtwork.status === 'solo print') && (
+                    {selectedArtwork.status !== 'no disponible' && (
                       <button 
                         onClick={() => setPurchaseFormat('print')}
-                        className={`p-3 border text-center transition-colors ${purchaseFormat === 'print' ? 'border-noche bg-noche text-white' : 'border-noche/20 hover:border-noche/50 text-noche'}`}
+                        className={`p-3 border text-center transition-colors flex flex-col items-center justify-center ${purchaseFormat === 'print' ? 'border-noche bg-noche text-white' : 'border-noche/20 hover:border-noche/50 text-noche'}`}
                       >
                         <div className="font-display font-medium">Print Fine Art</div>
-                        <div className="text-sm opacity-80">${selectedArtwork.printPrice ? selectedArtwork.printPrice.toLocaleString() : '1,500'} MXN</div>
+                        <div className="text-sm opacity-80">$100 MXN (A4)</div>
                       </button>
                     )}
                   </div>

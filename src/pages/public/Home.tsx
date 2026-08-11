@@ -34,7 +34,7 @@ export function Home() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-crema-light/80 text-lg mb-10 max-w-xl"
           >
-            Estudio de Arte en Tlalpan, fundado por artistas para artistas... y para quienes están por descubrir que lo son sin importar su nivel.
+            Estudio de Arte en Tlalpan, fundado por artistas, para artistas…y para quienes están por descubrir que lo son.
           </motion.p>
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -112,7 +112,7 @@ export function Home() {
                   </div>
                   <div>
                     <h3 className="font-display text-xl mb-1">Vianey César Martínez</h3>
-                    <p className="text-sm text-text-muted">Artista Plástica, diseñadora, animadora 3D y docente. Especialidad en Arte Terapia y Escultura tradicional.</p>
+                    <p className="text-sm text-text-muted">Diseñadora, Animadora Digital y Artista. Directora y Cofundadora de AV Arte Estudio.</p>
                   </div>
                 </div>
                 
@@ -121,8 +121,8 @@ export function Home() {
                     <Sparkles size={24} className="text-[#8E1F79]" />
                   </div>
                   <div>
-                    <h3 className="font-display text-xl mb-1">Aglael S. Valdivia Ibarra</h3>
-                    <p className="text-sm text-text-muted">Artista plástica y docente. Especialista en técnicas pictóricas, gráfica tradicional y perspectiva de género.</p>
+                    <h3 className="font-display text-xl mb-1">Aglael Valdivia Ibarra</h3>
+                    <p className="text-sm text-text-muted">Artista plástica multidisciplinaria y docente. Especialista en técnicas pictóricas y apasionada por el color, la mitología y la representación de las mujeres más allá de los cánones tradicionales.</p>
                   </div>
                 </div>
               </div>

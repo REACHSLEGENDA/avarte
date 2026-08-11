@@ -48,10 +48,9 @@ export function Classes() {
             </p>
             
             <ul className="space-y-4 mb-10">
-              <FeatureItem text="4 horas por semana (sesiones de 2h)" />
-              <FeatureItem text="Horarios: L-V 10am-2pm o 4pm-7pm | Sáb 9am-2pm" />
-              <FeatureItem text="Fundamentos: observación, proporción, volumen, perspectiva" />
-              <FeatureItem text="Técnicas: grafito, carbón, acuarela, tinta, gis pastel, etc." />
+              <FeatureItem text="4 horas a la semana, sesiones de dos horas" />
+              <FeatureItem text="Fundamentos: Observación, proporción, claroscuro, composición" />
+              <FeatureItem text="Técnicas: Grafito, carbón, gis pastel, acrílico, acuarela, tinta, óleo y medios mixtos." />
             </ul>
 
             <div className="mb-10">
@@ -112,7 +111,10 @@ export function Classes() {
       <section className="px-4 max-w-4xl mx-auto text-center mt-12">
         <h3 className="font-display text-3xl text-noche mb-6">Metodología del Estudio</h3>
         <p className="text-lg text-text-muted mb-8 leading-relaxed">
-          Nuestras clases no siguen un modelo de "copiar y pegar". Cada alumno avanza a su propio ritmo con un plan de estudios que garantiza el aprendizaje de la técnica mientras descubre qué quiere decir a través de ella. Se requiere compromiso, constancia y ganas de explorar.
+          Nuestras clases no siguen un modelo de "copiar y pegar". Entendemos que cada persona tiene una forma distinta de aprender y crear, por eso nos basamos en una atención individualizada, el alumno avanza a su propio ritmo con un plan de estudios que garantiza el aprendizaje de la técnica mientras descubre qué quiere decir a través de ella.
+        </p>
+        <p className="text-lg text-text-muted mb-8 leading-relaxed">
+          Fomentamos un ambiente de apoyo, donde el diálogo y el intercambio de ideas son fundamentales. Aquí no solo desarrollarás habilidades técnicas, sino también un pensamiento reflexivo, observador y crítico que te permitirá encontrar tu propia voz.
         </p>
       </section>
     </div>

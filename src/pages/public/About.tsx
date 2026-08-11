@@ -77,7 +77,7 @@ export function About() {
               <div>
                 <h4 className="font-mono text-xs font-semibold uppercase tracking-wider text-noche mb-3">Manejo de Técnicas Pictóricas</h4>
                 <div className="flex flex-wrap gap-2">
-                  {['Óleo', 'Hiperrealismo al Carbón', 'Acuarela', 'Acrílico', 'Escultura Tradicional', 'Arte con Tecnología', 'Diseño de joyería en plata'].map(tech => (
+                  {['Óleo', 'Hiperrealismo al Carbón', 'Acuarela', 'Acrílico', 'Lápices de color', 'Escultura', 'Arte con Tecnología', 'Diseño de joyería en plata'].map(tech => (
                     <span key={tech} className="px-3 py-1 bg-crema border border-noche/10 text-xs rounded-full">{tech}</span>
                   ))}
                 </div>
@@ -95,7 +95,7 @@ export function About() {
             <div className="inline-flex items-center justify-center p-3 bg-teal/10 rounded-full mb-6 text-teal">
               <Sparkles size={24} />
             </div>
-            <h2 className="font-display text-4xl text-noche mb-2">Aglael S. Valdivia Ibarra</h2>
+            <h2 className="font-display text-4xl text-noche mb-2">Aglael Valdivia Ibarra</h2>
             <p className="text-teal font-medium text-lg mb-6">Artista plástica y docente. Fundadora y Directora.</p>
             
             <div className="space-y-4 text-text-muted mb-8">
@@ -106,7 +106,7 @@ export function About() {
             <div className="pt-6 border-t border-noche/10">
               <h4 className="font-mono text-xs font-semibold uppercase tracking-wider text-noche mb-3">Técnicas y Habilidades</h4>
               <div className="flex flex-wrap gap-2">
-                {['Óleo y Acrílico', 'Acuarela y Pastel', 'Grabado (Linóleo/Metal)', 'Pigmentos Naturales', 'Encuadernación', 'Gestión de Exposiciones'].map(tech => (
+                {['Óleo', 'Acrílico', 'Acuarela y Pastel', 'Grabado', 'Pigmentos Naturales', 'Encuadernación', 'Temple', 'Fresco', 'Dorado', 'Tintas', 'Plumones al alcohol'].map(tech => (
                   <span key={tech} className="px-3 py-1 bg-crema border border-noche/10 text-xs rounded-full">{tech}</span>
                 ))}
               </div>

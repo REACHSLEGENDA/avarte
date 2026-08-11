@@ -23,11 +23,11 @@ export function PublicLayout() {
     <div className="min-h-screen flex flex-col font-body bg-crema text-noche">
       <header className="sticky top-0 z-50 bg-crema/90 backdrop-blur-sm border-b border-noche/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2 relative z-50">
+          <Link to="/" className="flex items-center gap-2 relative z-50 shrink-0">
             <img src="/logo-negro.png" alt="AV Arte Estudio" className="h-12" />
-            <span className="font-display font-semibold text-xl tracking-tight hidden sm:block">AV Arte Estudio</span>
+            <span className="font-display font-semibold text-xl tracking-tight hidden xl:block">AV Arte Estudio</span>
           </Link>
-          <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
+          <nav className="hidden md:flex items-center gap-4 lg:gap-6 xl:gap-8 text-sm font-medium">
             <Link to="/quienes-somos" className="hover:text-naranja transition-colors">Quiénes Somos</Link>
             <Link to="/clases" className="hover:text-naranja transition-colors">Clases</Link>
             <Link to="/talleres" className="hover:text-naranja transition-colors">Talleres</Link>
@@ -98,7 +98,7 @@ export function PublicLayout() {
           <div>
             <h4 className="font-display font-semibold text-lg mb-4 text-white">Contacto</h4>
             <ul className="space-y-3 text-sm text-crema-light/80 break-words">
-              <li><a href="https://maps.app.goo.gl/swB7sDifqeNKpd878?g_st=iw" target="_blank" rel="noreferrer" className="hover:text-naranja transition-colors">Tlalpan, CDMX</a></li>
+              <li><a href="https://maps.app.goo.gl/swB7sDifqeNKpd878?g_st=iw" target="_blank" rel="noreferrer" className="hover:text-naranja transition-colors block">Plaza las hadas Calz de las Brujas 303, Coapa, Rinconada de las Hadas, Tlalpan, 14390 CDMX.</a></li>
               <li>contacto@avarteestudio.com</li>
               <li>WhatsApp: <a href="https://wa.me/525568892651" target="_blank" rel="noreferrer" className="hover:text-naranja transition-colors">55 6889 2651</a></li>
             </ul>

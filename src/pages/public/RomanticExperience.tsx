@@ -44,23 +44,23 @@ export function RomanticExperience() {
               <IncludeItem 
                 icon={<Wine />} 
                 title="Brindis Romántico" 
-                desc="Botella de vino y decoración especial en un espacio privado (flores, pétalos, globos)." 
+                desc="Brindis con botella de vino, y montaje del espacio que incluye pétalos, velas y cristalería." 
               />
               <IncludeItem 
                 icon={<Palette />} 
                 title="Material Completo" 
-                desc="2 bastidores (22x28 cm), pinturas y herramientas. Técnicas a elegir: Acrílico, Gis Pastel o Acuarela." 
+                desc="Lienzo a elegir tamaño 20x25 cm o 30x40 cm, mandil por pareja, pinturas (acrílico, acuarela, gis pastel, lápices de color) e instrumentos." 
               />
               <IncludeItem 
                 icon={<Heart />} 
                 title="Atención Personalizada" 
-                desc="3 horas de sesión guiada por una artista profesional en exclusiva para ustedes dos." 
+                desc="Sesión de 3 horas donde una artista guiará el proyecto de pintura de inicio a fin." 
               />
             </div>
             
             <div className="mt-12 bg-white p-8 border border-noche/10">
-              <div className="text-3xl font-display text-noche mb-2">$2,000 <span className="text-base font-body text-text-muted">por pareja</span></div>
-              <p className="text-sm text-text-muted">Se requiere reservar con al menos 48 horas de anticipación.</p>
+              <div className="text-3xl font-display text-noche mb-2">$3,800 <span className="text-base font-body text-text-muted">por pareja</span></div>
+              <p className="text-sm text-text-muted">Se requiere reservar con al menos una semana de anticipación.</p>
             </div>
           </div>
           

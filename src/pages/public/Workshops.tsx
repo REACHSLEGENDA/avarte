@@ -3,15 +3,15 @@ import { ArrowRight, HeartHandshake, Cake, Heart, Users, Wine, User, PartyPopper
 import { motion, AnimatePresence } from 'framer-motion';
 
 const workshops = [
-  { id: 1, name: 'Óleo', desc: 'Domina los empastes, veladuras y tiempos de secado de la técnica clásica.' },
-  { id: 2, name: 'Acuarela', desc: 'Explora la fluidez, transparencias y técnicas húmedas.' },
-  { id: 3, name: 'Acrílico', desc: 'Versatilidad, secado rápido y colores vibrantes en diferentes soportes.' },
-  { id: 4, name: 'Escultura', desc: 'Trabajo tridimensional explorando volúmenes y espacio.' },
-  { id: 5, name: 'Dibujo de figura humana', desc: 'Estudio de la figura humana, proporción y movimiento.' },
-  { id: 6, name: 'Cerámica en barro', desc: 'Técnicas de modelado, texturas y preparación para quema.' },
-  { id: 7, name: 'Realismo al carbón', desc: 'Manejo de claroscuros, texturas y valores tonales.' },
-  { id: 8, name: 'Realismo en prismacolor', desc: 'Mezcla óptica, saturación y realismo con lápices de color.' },
-  { id: 9, name: 'Grabado', desc: 'Linóleo y punta seca, experimentando con matrices y estampación.' },
+  { id: 1, name: 'Óleo', desc: 'Domina los empastes, veladuras, grisallas, y tiempos de secado de la técnica clásica.' },
+  { id: 2, name: 'Acuarela', desc: 'Descubre la fluidez, transparencias, capas y técnicas húmedas para crear atmósferas envolventes.' },
+  { id: 3, name: 'Acrílico', desc: 'Aprovecha su secado rápido y colores vibrantes en diferentes soportes (tela, madera, papel).' },
+  { id: 4, name: 'Escultura', desc: 'Construye desde cero una pieza tridimensional, explorando texturas, volúmenes y espacio.' },
+  { id: 5, name: 'Dibujo de Figura Humana', desc: 'Estudio de anatomía, proporción y movimiento.' },
+  { id: 6, name: 'Cerámica en Barro', desc: 'Aprende a modelar con técnica de placas, pellizco y churros.' },
+  { id: 7, name: 'Realismo al Carbón', desc: 'Logra la textura, el claroscuro y volúmenes realistas de diferentes objetos y la piel humana.' },
+  { id: 8, name: 'Realismo en Prismacolor', desc: 'Aprende los principios de la mezcla óptica, saturación y realismo de esta técnica poco común.' },
+  { id: 9, name: 'Grabado', desc: 'Adéntrate en el linóleo y punta seca experimentando con matrices, tintas y estampación.' },
 ];
 
 const experiencias = [
@@ -161,7 +161,7 @@ export function Workshops() {
             {/* CTA */}
             <section className="mt-16 max-w-4xl mx-auto px-4 text-center">
               <a href="/contacto" className="inline-flex items-center gap-2 px-10 py-5 bg-noche text-white font-medium hover:bg-noche-soft transition-colors text-lg">
-                Reservar un taller regular <ArrowRight size={20} />
+                Reserva tu taller <ArrowRight size={20} />
               </a>
               <p className="mt-4 text-sm text-text-muted">Reservar con una semana de anticipación.</p>
             </section>
