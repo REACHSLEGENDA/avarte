@@ -229,7 +229,7 @@ export function Gallery() {
                 
                 <div className="mt-auto">
                   <a 
-                    href={`https://wa.me/525568892651?text=Hola,%20me%20interesa%20adquirir%20la%20obra%20"${selectedArtwork.title}"%20en%20formato%20${purchaseFormat.toUpperCase()}`}
+                    href={`https://wa.me/525568892651?text=${encodeURIComponent(`Hola, me interesa adquirir la obra "${selectedArtwork.title}" en formato ${purchaseFormat.toUpperCase()}`)}`}
                     target="_blank"
                     rel="noreferrer"
                     className="w-full py-4 bg-green-600 text-white font-medium flex items-center justify-center gap-2 hover:bg-green-700 transition-colors"

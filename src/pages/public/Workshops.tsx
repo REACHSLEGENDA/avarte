@@ -150,7 +150,7 @@ export function Workshops() {
                   >
                     <h3 className="font-display text-2xl text-noche mb-4 group-hover:text-naranja transition-colors">{w.name}</h3>
                     <p className="text-text-muted text-base leading-relaxed mb-8 flex-grow">{w.desc}</p>
-                    <a href="/contacto" className="inline-flex items-center gap-2 text-sm font-mono font-medium tracking-wider text-noche/40 group-hover:text-naranja transition-colors mt-auto pt-4 border-t border-noche/5">
+                    <a href={"https://wa.me/525568892651?text=Hola,%20me%20interesa%20reservar%20el%20taller%20de%20" + encodeURIComponent(w.name)} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm font-mono font-medium tracking-wider text-noche/40 group-hover:text-naranja transition-colors mt-auto pt-4 border-t border-noche/5">
                       RESERVAR <ArrowRight size={14} className="group-hover:translate-x-2 transition-transform" />
                     </a>
                   </motion.div>
@@ -160,7 +160,7 @@ export function Workshops() {
 
             {/* CTA */}
             <section className="mt-16 max-w-4xl mx-auto px-4 text-center">
-              <a href="/contacto" className="inline-flex items-center gap-2 px-10 py-5 bg-noche text-white font-medium hover:bg-noche-soft transition-colors text-lg">
+              <a href="https://wa.me/525568892651?text=Hola,%20me%20interesa%20reservar%20un%20taller" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-10 py-5 bg-noche text-white font-medium hover:bg-noche-soft transition-colors text-lg">
                 Reserva tu taller <ArrowRight size={20} />
               </a>
               <p className="mt-4 text-sm text-text-muted">Reservar con una semana de anticipación.</p>
@@ -195,7 +195,7 @@ export function Workshops() {
                             Ver más detalles <ArrowRight size={18} />
                           </a>
                         ) : (
-                          <a href="/contacto" className="inline-flex items-center gap-2 text-noche font-medium hover:text-naranja transition-colors mt-auto">
+                          <a href={"https://wa.me/525568892651?text=Hola,%20me%20interesa%20solicitar%20informaci%C3%B3n%20sobre%20" + encodeURIComponent(exp.title)} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-noche font-medium hover:text-naranja transition-colors mt-auto">
                             Solicitar información <ArrowRight size={18} />
                           </a>
                         )}
@@ -221,7 +221,7 @@ export function Workshops() {
                 </div>
                 <h3 className="font-display text-3xl mb-4 text-noche">¿Tienes una idea especial en mente?</h3>
                 <p className="text-text-muted mb-8 max-w-2xl mx-auto text-lg">Personalizamos la experiencia artística a tu medida. Cuéntanos qué te gustaría hacer y nosotros nos encargamos del resto.</p>
-                <a href="/contacto" className="inline-flex items-center gap-2 px-10 py-5 bg-naranja text-noche font-medium hover:bg-[#ff9d2a] transition-colors text-lg">
+                <a href="https://wa.me/525568892651?text=Hola,%20me%20interesa%20cotizar%20una%20experiencia%20art%C3%ADstica" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-10 py-5 bg-naranja text-noche font-medium hover:bg-[#ff9d2a] transition-colors text-lg">
                   Cotizar Experiencia <ArrowRight size={20} />
                 </a>
               </section>

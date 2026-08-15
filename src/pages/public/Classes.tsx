@@ -62,7 +62,7 @@ export function Classes() {
                 ]} columns={2} />
             </div>
             
-            <a href="/contacto" className="mt-auto w-full block text-center py-4 bg-noche text-white font-medium hover:bg-noche-soft transition-colors">
+            <a href="https://wa.me/525568892651?text=Hola,%20me%20interesa%20agendar%20una%20clase%20muestra%20para%20Adultos" target="_blank" rel="noreferrer" className="mt-auto w-full block text-center py-4 bg-noche text-white font-medium hover:bg-noche-soft transition-colors">
               Agenda una clase muestra
             </a>
           </div>
@@ -99,7 +99,7 @@ export function Classes() {
                 ]} columns={2} />
             </div>
             
-            <a href="/contacto" className="mt-auto w-full block text-center py-4 bg-naranja text-noche font-medium hover:bg-[#ff9d2a] transition-colors">
+            <a href="https://wa.me/525568892651?text=Hola,%20me%20interesa%20agendar%20una%20clase%20muestra%20para%20Niños%20y%20Jóvenes" target="_blank" rel="noreferrer" className="mt-auto w-full block text-center py-4 bg-naranja text-noche font-medium hover:bg-[#ff9d2a] transition-colors">
               Agenda una clase muestra
             </a>
           </div>
